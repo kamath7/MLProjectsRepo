@@ -16,6 +16,8 @@ Once the similarity matrix is built, the system can use it to make recommendatio
 One challenge of user-based collaborative filtering is that it requires a significant amount of data about users' preferences to be effective. This means that the system may not work well for new users or users with sparse data. Additionally, the system may suffer from the "cold start" problem, where it is difficult to make recommendations for new items or products that have not yet been rated or liked by any users.
 
 
+Simple Explanation - User-based collaborative filtering is like when you ask your friends what their favorite toys are and then pick toys that your friends like to play with that you haven't seen before. It's like making new friends who like the same things as you and asking them what they like, so you can find new things you might enjoy too!
+
 ### Item Based Collaborative filtering
 
 

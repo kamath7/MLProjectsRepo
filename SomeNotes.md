@@ -52,3 +52,11 @@ How to deal with it?
 Oversampling - duplicate samples from the minority class
 
 Undersampling - Remove the negative ones
+
+#### Binning
+
+Binning is a technique used in machine learning to group similar things together. Imagine you have a bunch of toys, and you want to organize them by color. You could put all the red toys in one box, all the blue toys in another box, and so on. This is like binning, where we group data into different categories based on a certain attribute, like color.
+
+In machine learning, we use binning to group similar data together based on a numerical value, like age. We divide the data into different groups or bins based on ranges of age, for example, all the people who are between 0 and 10 years old in one bin, all the people between 11 and 20 years old in another bin, and so on. This helps us to simplify the data and make it easier to analyze.
+
+Binning can also help us to deal with outliers - data points that are very different from the others. For example, if we have one person in our dataset who is 1000 years old, we could put them in their own bin instead of including them with other people who are much younger. This helps us to avoid having outliers skew the analysis.

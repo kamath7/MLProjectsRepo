@@ -40,3 +40,5 @@ Mean replacement is a simple and quick method to handle missing data, but it has
 Overall, mean replacement is a useful technique for handling missing data when we have a large amount of missing values, but it's important to carefully consider the limitations and potential impact on the analysis.
 
 tldr; Mean replacement is like guessing what the missing piece of a puzzle might be by looking at the other pieces around it. In machine learning, this is done when we have some missing information in our data, and we fill in the missing parts with the average of the information we do have. It's not a perfect solution, but it can help us make sense of the data we have when we don't have all the information we need.
+
+Another alternate is dropping the missing rows. 

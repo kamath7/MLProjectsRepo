@@ -26,3 +26,17 @@ The curse of dimensionality is a problem in machine learning where as the number
 To understand this, imagine that you are trying to find a specific book on a bookshelf with only one row of books. If you have 10 books, it's relatively easy to find the book you're looking for by scanning the titles. However, if you have 1000 books, it becomes much more difficult and time-consuming to find the book you need. The same concept applies to machine learning algorithms - as the number of input features increases, the amount of data required to accurately represent the input space also increases exponentially.
 
 To overcome the curse of dimensionality, some techniques include feature selection, dimensionality reduction, and using algorithms that are designed to work with high-dimensional data. It's important to balance the complexity of the input features with the amount of data available, to avoid overfitting or underfitting the model.
+
+
+## Mean Replacement - (meant only for columns!!)
+
+
+Mean replacement is a technique used in machine learning to handle missing data. When we have a dataset with some missing values, we can replace those missing values with the average (or mean) value of that feature in the dataset.
+
+For example, let's say we have a dataset that contains information about the height of different people, but some of the heights are missing. We can calculate the mean height of all the people in the dataset, and then replace the missing values with this mean height value.
+
+Mean replacement is a simple and quick method to handle missing data, but it has some limitations. It assumes that the missing values are missing at random, and that the distribution of the data is roughly symmetric. It can also distort the overall distribution of the data and potentially impact the performance of the machine learning algorithm.
+
+Overall, mean replacement is a useful technique for handling missing data when we have a large amount of missing values, but it's important to carefully consider the limitations and potential impact on the analysis.
+
+tldr; Mean replacement is like guessing what the missing piece of a puzzle might be by looking at the other pieces around it. In machine learning, this is done when we have some missing information in our data, and we fill in the missing parts with the average of the information we do have. It's not a perfect solution, but it can help us make sense of the data we have when we don't have all the information we need.

@@ -82,3 +82,14 @@ In machine learning, we use encoding to represent data in a way that the compute
 Encoding can also be used to represent other types of data, like text or images. For example, if we want to analyze the sentiment of a piece of text (whether it's positive or negative), we could encode the text by representing each word with a number that corresponds to its sentiment score.
 
 Overall, encoding is a way to represent data using a different set of symbols or numbers that the computer can understand and work with.
+
+
+#### Scaling
+
+
+
+Scaling in machine learning is like making things the same size so we can compare them better. Imagine you have two toy cars, but one is much bigger than the other. If you want to compare how fast they can go, it's not fair to compare them as they are because the bigger one has an advantage. So, you could make them the same size by putting the smaller car on a platform that raises it up to the same height as the bigger one. This is like scaling, where we adjust the size of things so we can compare them more easily.
+
+In machine learning, we use scaling to adjust the range of values for different variables so that they are on the same scale. For example, imagine we have a dataset of people's heights and their salaries. If we want to analyze the data to see if there's a relationship between height and salary, we need to make sure that the two variables are on the same scale. Otherwise, the variable with a bigger range of values (like salary) will dominate the analysis. So, we can scale the data by dividing all the values for each variable by the maximum value for that variable.
+
+Overall, scaling is a way to adjust the range of values for different variables so that they are on the same scale, making it easier to compare and analyze them.

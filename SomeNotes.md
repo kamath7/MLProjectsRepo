@@ -60,3 +60,14 @@ Binning is a technique used in machine learning to group similar things together
 In machine learning, we use binning to group similar data together based on a numerical value, like age. We divide the data into different groups or bins based on ranges of age, for example, all the people who are between 0 and 10 years old in one bin, all the people between 11 and 20 years old in another bin, and so on. This helps us to simplify the data and make it easier to analyze.
 
 Binning can also help us to deal with outliers - data points that are very different from the others. For example, if we have one person in our dataset who is 1000 years old, we could put them in their own bin instead of including them with other people who are much younger. This helps us to avoid having outliers skew the analysis.
+
+
+#### Transforming
+
+Transforming in machine learning is like changing the way we look at something so we can understand it better. Imagine you have a toy car, but it's too big to fit in your toy garage. You could transform the car by taking it apart and making it into smaller pieces that can fit in the garage. In machine learning, we transform data by changing the way it's represented, so we can analyze it more easily.
+
+For example, imagine we have a dataset with the weights of different animals, but the weights are all in pounds. If we want to analyze the data using a metric system that uses kilograms, we can transform the weights by converting them from pounds to kilograms. This helps us to analyze the data in a way that makes more sense.
+
+Transforming can also involve scaling the data, which means changing the range of the values so they are easier to work with. For example, if we have a dataset with temperatures in Celsius, and we want to analyze the data using a scale that goes from 0 to 100, we can transform the temperatures by scaling them so they fit within that range.
+
+Overall, transforming is a way to change the representation of data to make it easier to analyze and understand.

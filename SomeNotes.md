@@ -71,3 +71,14 @@ For example, imagine we have a dataset with the weights of different animals, bu
 Transforming can also involve scaling the data, which means changing the range of the values so they are easier to work with. For example, if we have a dataset with temperatures in Celsius, and we want to analyze the data using a scale that goes from 0 to 100, we can transform the temperatures by scaling them so they fit within that range.
 
 Overall, transforming is a way to change the representation of data to make it easier to analyze and understand.
+
+
+#### Encoding
+
+Encoding in machine learning is like using a secret code to represent something. Imagine you want to send a message to your friend, but you don't want anyone else to be able to read it. You could use a code, where each letter is replaced by a different symbol, like A becomes #, B becomes @, and so on. This is like encoding, where we represent data using a different set of symbols.
+
+In machine learning, we use encoding to represent data in a way that the computer can understand. For example, imagine we have a dataset of different animals, but we want to represent them using numbers instead of names. We could assign each animal a number, like 1 for cat, 2 for dog, 3 for bird, and so on. This is like encoding, where we use numbers instead of names to represent the different animals.
+
+Encoding can also be used to represent other types of data, like text or images. For example, if we want to analyze the sentiment of a piece of text (whether it's positive or negative), we could encode the text by representing each word with a number that corresponds to its sentiment score.
+
+Overall, encoding is a way to represent data using a different set of symbols or numbers that the computer can understand and work with.

@@ -93,3 +93,17 @@ Scaling in machine learning is like making things the same size so we can compar
 In machine learning, we use scaling to adjust the range of values for different variables so that they are on the same scale. For example, imagine we have a dataset of people's heights and their salaries. If we want to analyze the data to see if there's a relationship between height and salary, we need to make sure that the two variables are on the same scale. Otherwise, the variable with a bigger range of values (like salary) will dominate the analysis. So, we can scale the data by dividing all the values for each variable by the maximum value for that variable.
 
 Overall, scaling is a way to adjust the range of values for different variables so that they are on the same scale, making it easier to compare and analyze them.
+
+
+#### TF-IDF
+
+
+TF-IDF stands for Term Frequency-Inverse Document Frequency. It is a numerical statistic used to evaluate the importance of a term within a document or a collection of documents. TF-IDF is commonly used in information retrieval and text mining to determine the relevance of a term to a document in a corpus.
+
+The TF component, term frequency, measures the occurrence frequency of a term within a document. It calculates the ratio of the number of times a term appears in a document to the total number of terms in that document. The intuition behind TF is that a higher frequency of a term within a document suggests that the term is more important to that document.
+
+The IDF component, inverse document frequency, measures the rarity of a term across the entire corpus. It calculates the logarithm of the ratio of the total number of documents in the corpus to the number of documents that contain the term. The IDF is higher for terms that appear in fewer documents, indicating that those terms are more distinctive and potentially more informative.
+
+The TF-IDF score for a term in a document is obtained by multiplying the term frequency (TF) and inverse document frequency (IDF) values. A higher TF-IDF score indicates that the term is both frequent within the document and relatively rare across the corpus, suggesting it has more significance or importance.
+
+TF-IDF helps in identifying key terms or important features within a document or a collection of documents. It is commonly used for tasks such as text classification, information retrieval, document similarity analysis, and keyword extraction.

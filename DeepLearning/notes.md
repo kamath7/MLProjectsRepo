@@ -44,3 +44,26 @@ By repeating the steps of forward propagation, loss calculation, backward propag
 It's worth noting that there are different variants of gradient descent, such as stochastic gradient descent (SGD), which updates the parameters after each individual data point, and more advanced techniques like Adam and RMSprop that adapt the learning rate during training to achieve faster convergence.
 
 
+### Perceptrons and LTUs
+
+Imagine you have a friend who is really good at recognizing different animals. You show your friend a picture, and they tell you what animal it is. How do they do it?
+
+Well, they look at different parts of the animal, like its ears, eyes, and tail. They pay attention to these features to figure out what animal it might be. They combine all this information and make a guess.
+
+A neural network works in a similar way. It is like having many friends, called "neurons," working together to solve a problem. Each neuron looks at different parts of the input and helps make a decision.
+
+One of the simplest types of neurons is called a "perceptron." Imagine it as a little decision-maker. It takes in some inputs, like the features of an animal, and makes a decision based on them.
+
+The perceptron works like this: It multiplies each input by a number, called a "weight," which determines how important that input is. Then, it adds up all these weighted inputs and checks if the total is above a certain threshold. If it is, the perceptron says "yes," otherwise it says "no."
+
+For example, if the perceptron is trying to recognize cats, it might look at features like pointy ears and a long tail. If the weighted sum of these features is above the threshold, it says "yes, it's a cat!"
+
+But what if we have more complex problems? That's where "LTUs" come in. LTU stands for "Linear Threshold Unit." It's a bit like a perceptron, but it can do more complex calculations.
+
+An LTU works by taking in multiple inputs, just like a perceptron. But instead of just checking if the weighted sum is above a threshold, an LTU also applies a non-linear function to the sum. This function helps the LTU make more complex decisions.
+
+With this extra flexibility, an LTU can recognize not only simple shapes like cats but also more complicated things, like letters or even faces.
+
+In a neural network, you have layers of these LTUs. Each LTU in a layer helps make a decision based on different features. These layers are connected, and the outputs of one layer become inputs for the next layer. By combining the decisions from all the LTUs, the neural network can solve more complex problems, like recognizing different types of animals, objects, or even understanding spoken words.
+
+So, perceptrons and LTUs are like little decision-makers in a neural network. They help process information and work together to solve problems. By combining their efforts, neural networks can learn to recognize and understand many different things.

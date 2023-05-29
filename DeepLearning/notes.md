@@ -84,3 +84,23 @@ The gradients represent the sensitivity of the loss function to changes in the n
 Once the gradients have been computed, an optimization algorithm, such as gradient descent, is used to update the weights and biases of the network. The optimization algorithm adjusts the parameters in the direction opposite to the computed gradients, aiming to minimize the loss function. This iterative process of forward pass, backward pass, and parameter update continues until the network converges to a state where the loss is minimized, and the network's predictions match the desired outputs more accurately.
 
 Backpropagation is a powerful technique that enables deep neural networks to learn complex patterns and make accurate predictions. It allows the network to automatically adjust its internal representations by iteratively fine-tuning the weights and biases based on the discrepancies between predicted and desired outputs.
+
+### Activation Function
+
+In deep learning, an activation function is a mathematical function applied to the output of a neuron or a layer of neurons in a neural network. The purpose of an activation function is to introduce non-linearities into the network, allowing it to learn and model complex relationships between inputs and outputs.
+
+Here are some key purposes of activation functions in deep learning:
+
+Non-linearity: Activation functions introduce non-linear transformations to the input data. Neural networks without activation functions would only be able to represent linear relationships between inputs and outputs. By introducing non-linearities, activation functions enable neural networks to learn and approximate complex, non-linear functions, which are common in real-world data and tasks.
+
+Learning Complex Patterns: The non-linear properties of activation functions allow neural networks to learn and represent complex patterns and relationships in the data. Deep learning models with multiple layers can stack non-linear transformations on top of each other, enabling them to learn hierarchical representations of the input data.
+
+Gradient Propagation: During the backpropagation algorithm, gradients are computed and propagated backward through the network to update the weights. Activation functions play a crucial role in determining the gradients that flow through the network. They ensure that the gradients can be properly computed and propagated, allowing the network to learn effectively. Activation functions with well-defined derivatives and a suitable range of output values are essential for stable and efficient gradient propagation.
+
+Output Range Limitation: Activation functions can restrict the output values of neurons within a certain range. For example, some activation functions, such as the sigmoid or tanh functions, map their inputs to a range between 0 and 1 or -1 and 1, respectively. This can be beneficial in certain scenarios, such as binary classification problems, where the outputs need to be interpreted as probabilities or bounded values.
+
+Sparsity and Regularization: Certain activation functions, such as the rectified linear unit (ReLU), exhibit sparsity properties. They can lead to sparse activation patterns, where only a subset of neurons is activated while others remain inactive. This can help with regularization and prevent overfitting by promoting sparse representations in the network.
+
+There are several commonly used activation functions in deep learning, including sigmoid, tanh, ReLU, Leaky ReLU, and softmax. Each activation function has its own characteristics and is suited for different types of tasks and network architectures.
+
+Overall, activation functions are essential components in deep learning models, enabling the network to learn complex patterns, introduce non-linearities, and propagate gradients effectively during training.

@@ -67,3 +67,20 @@ With this extra flexibility, an LTU can recognize not only simple shapes like ca
 In a neural network, you have layers of these LTUs. Each LTU in a layer helps make a decision based on different features. These layers are connected, and the outputs of one layer become inputs for the next layer. By combining the decisions from all the LTUs, the neural network can solve more complex problems, like recognizing different types of animals, objects, or even understanding spoken words.
 
 So, perceptrons and LTUs are like little decision-makers in a neural network. They help process information and work together to solve problems. By combining their efforts, neural networks can learn to recognize and understand many different things.
+
+
+### Backpropagation
+
+Backpropagation is a fundamental algorithm used in deep learning to train neural networks. It is a mathematical method that allows the network to learn from labeled training data and adjust its weights and biases to minimize the difference between its predicted outputs and the desired outputs.
+
+The backpropagation algorithm works in two main phases: the forward pass and the backward pass.
+
+Forward Pass: In the forward pass, the input data is fed into the neural network, and the activations of each neuron in the network are computed layer by layer. The input data propagates through the network, and the outputs are generated. Each neuron applies a weighted sum of its inputs, followed by an activation function, to produce its output. This process continues until the output layer is reached, and the predicted output of the network is obtained.
+
+Backward Pass: In the backward pass, the computed outputs are compared to the desired outputs using a loss function, which measures the discrepancy between them. The goal is to minimize this loss. The algorithm then calculates the gradients of the loss function with respect to the weights and biases of the network using a technique called the chain rule from calculus.
+
+The gradients represent the sensitivity of the loss function to changes in the network's parameters. They indicate the direction and magnitude of the adjustments needed to minimize the loss. The gradients are propagated backward through the network, layer by layer, starting from the output layer. Each neuron receives the gradient from the neurons in the next layer and uses it to compute its own contribution to the overall gradient.
+
+Once the gradients have been computed, an optimization algorithm, such as gradient descent, is used to update the weights and biases of the network. The optimization algorithm adjusts the parameters in the direction opposite to the computed gradients, aiming to minimize the loss function. This iterative process of forward pass, backward pass, and parameter update continues until the network converges to a state where the loss is minimized, and the network's predictions match the desired outputs more accurately.
+
+Backpropagation is a powerful technique that enables deep neural networks to learn complex patterns and make accurate predictions. It allows the network to automatically adjust its internal representations by iteratively fine-tuning the weights and biases based on the discrepancies between predicted and desired outputs.

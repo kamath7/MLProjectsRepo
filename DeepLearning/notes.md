@@ -104,3 +104,25 @@ Sparsity and Regularization: Certain activation functions, such as the rectified
 There are several commonly used activation functions in deep learning, including sigmoid, tanh, ReLU, Leaky ReLU, and softmax. Each activation function has its own characteristics and is suited for different types of tasks and network architectures.
 
 Overall, activation functions are essential components in deep learning models, enabling the network to learn complex patterns, introduce non-linearities, and propagate gradients effectively during training.
+
+
+### Tensor
+
+
+In TensorFlow, a tensor is a fundamental data structure used to represent and manipulate data in a computational graph. It is similar to a mathematical concept of a multi-dimensional array or matrix, but with additional capabilities and functionalities.
+
+Here's a simple explanation of tensors:
+
+Imagine you have a collection of numbers. If you have only one number, that's just a scalar. If you arrange the numbers in a row or a column, it becomes a vector. Now, if you arrange those vectors into a table or a grid, it becomes a matrix. In TensorFlow, a tensor is an extension of these concepts to represent arrays of any number of dimensions.
+
+Tensors can have different ranks or dimensions. For example:
+
+A rank-0 tensor is a scalar, representing a single number.
+A rank-1 tensor is a vector, representing a sequence of numbers.
+A rank-2 tensor is a matrix, representing a table of numbers.
+A rank-3 tensor represents a cube of numbers, and so on.
+Tensors in TensorFlow are more than just containers for numerical values. They also carry additional information, such as their shape and data type. The shape of a tensor refers to the number of dimensions it has and the size of each dimension. For example, a tensor of shape (2, 3) is a 2-dimensional tensor with 2 rows and 3 columns.
+
+TensorFlow provides a wide range of operations and functions to perform mathematical computations on tensors efficiently. These operations can include arithmetic operations, matrix multiplications, element-wise operations, and more. Tensors are at the core of TensorFlow's computational graph, allowing you to build and manipulate complex deep learning models.
+
+In summary, a tensor in TensorFlow is a fundamental data structure used to represent and operate on multi-dimensional arrays of numbers. It enables efficient computation and manipulation of data within TensorFlow's computational graph framework.

@@ -52,3 +52,37 @@ An autoencoder is a type of neural network that is used for unsupervised learnin
 
 The idea behind autoencoders is to learn a compact and meaningful representation of the input data. By training the autoencoder to minimize the difference between the original input and the reconstructed output, the network learns to capture important features and patterns in the data.
 
+### VAE 
+
+tldr; Imagine you have a magical machine that can take pictures of things and then create new pictures that look similar. It has two parts: a "picture taker" and a "picture maker."
+
+The picture taker looks at real pictures and tries to understand what makes them look the way they do. It learns about the important things in the pictures, like shapes and colors. Then, it takes all that knowledge and makes a special code that represents the important things it learned.
+
+The picture maker takes that special code and uses it to create new pictures. It knows how to put together shapes and colors based on the code it gets. So when you give it the code, it can make a new picture that looks like the ones it learned from.
+
+The cool thing is that this machine can learn to make pictures that are similar to the real ones, but it can also make new and different pictures. It's like having an artist that can paint new things based on what it has learned from other paintings.
+
+The machine learns by looking at lots of real pictures and practicing making new ones. It tries to make its pictures as close as possible to the real ones. Over time, it gets better and better at making pictures that look realistic.
+
+So, this magical machine called a Variational Autoencoder is like a special artist that learns from real pictures and then creates new pictures that look similar. It's like having a painter and a photographer in one machine, and they work together to make amazing art!
+
+
+Variational Autoencoders (VAEs) are a type of neural network architecture that combines elements of both autoencoders and probabilistic modeling. VAEs are used for unsupervised learning and are particularly effective in learning representations of complex data distributions, such as images, while also allowing for generating new samples.
+
+In a VAE, there are two main components: an encoder and a decoder.
+
+The encoder takes an input, typically an image, and maps it to a lower-dimensional representation called the latent space. The encoder learns to encode the input data into a mean vector (zMean) and a logarithm of the variance vector (zLogVar). These vectors capture the parameters of a probability distribution that represents the data in the latent space. The idea is to learn a compressed representation of the input that captures the important features while also allowing for sampling new data points.
+
+The decoder takes a point from the latent space, represented by a vector, and maps it back to the original input space, reconstructing the input data. The decoder learns to generate the output by taking a random sample from the learned distribution in the latent space.
+
+The training process of a VAE involves two main objectives: reconstruction loss and regularization loss.
+
+The reconstruction loss measures how well the VAE can reconstruct the input data from the latent space. It compares the reconstructed output to the original input and encourages the VAE to minimize the difference between them.
+
+The regularization loss, also known as the Kullback-Leibler (KL) divergence, encourages the learned distribution in the latent space to resemble a predefined prior distribution, usually a standard Gaussian distribution. This helps in regularizing the latent space and enables the VAE to generate new samples by sampling from the learned distribution.
+
+During training, the VAE optimizes a combination of these two losses to learn both meaningful latent representations and good generative capabilities. By minimizing the reconstruction loss, the VAE learns to encode and decode the input data accurately. By minimizing the KL divergence, it learns to have a well-behaved latent space that allows for smooth sampling and generation of new data points.
+
+Once trained, a VAE can be used for various tasks. It can generate new data samples by randomly sampling from the learned distribution in the latent space. By interpolating between different points in the latent space, the VAE can generate smooth transitions and blend characteristics from different input samples.
+
+Variational Autoencoders have been widely used in various applications, including image generation, anomaly detection, and data compression. They provide a powerful framework for learning meaningful representations of complex data distributions and generating new samples from those distributions.

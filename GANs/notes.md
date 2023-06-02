@@ -29,3 +29,26 @@ During training, the generator and discriminator networks are trained in an adve
 The training process involves alternating steps. In each step, the generator generates a batch of fake data samples using random noise as input. The discriminator then evaluates these samples along with a batch of real data samples and provides feedback on their authenticity. The gradients from the discriminator's evaluation are then used to update the generator's parameters, making it better at generating realistic samples. This process continues iteratively until the generator produces samples that are difficult for the discriminator to distinguish from real data.
 
 The objective of GANs is to find an equilibrium point where the generator produces samples that are realistic enough to fool the discriminator consistently. This equilibrium is achieved when the generator produces data that is indistinguishable from the real data, and the discriminator is unable to classify it accurately.
+
+Some components
+
+#### Auto Encoders
+
+tldr; magine you have a special machine that can look at pictures and then try to make copies of them. This machine has two parts: a squisher and a copycat.
+
+The squisher's job is to look at a picture and squish it down into a smaller, simpler version. It's like taking a big puzzle and squeezing it into a smaller puzzle. This smaller puzzle has fewer pieces, but it still gives us a good idea of what the original picture looked like.
+
+Once the squisher has made the small puzzle, the copycat's job is to take that puzzle and try to recreate the original picture. It looks at the smaller puzzle pieces and puts them together to make a new picture that looks as close as possible to the original.
+
+The squisher and the copycat work together and learn from each other. The squisher tries to make the best smaller puzzle it can, and the copycat tries to put the pieces together in the best way to make a picture that looks like the original.
+
+As they keep practicing, the squisher gets better at making the small puzzles, and the copycat gets better at putting the pieces together. They learn together until the copycat can make pictures that look very similar to the original ones.
+
+So, the special machine called an autoencoder is like having a squisher and a copycat that work as a team to make smaller versions of pictures and then recreate them. It's like a fun game of squeezing and copying, and they get better and better at it!
+
+
+
+An autoencoder is a type of neural network that is used for unsupervised learning, which means it doesn't require labeled data. It consists of an encoder and a decoder. The encoder takes an input, such as an image, and compresses it into a lower-dimensional representation called a latent space. The decoder then takes this compressed representation and tries to reconstruct the original input.
+
+The idea behind autoencoders is to learn a compact and meaningful representation of the input data. By training the autoencoder to minimize the difference between the original input and the reconstructed output, the network learns to capture important features and patterns in the data.
+
